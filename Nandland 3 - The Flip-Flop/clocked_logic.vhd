@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity Clocked_Logic is port(
     i_Clk      : in  std_logic;
     i_Switch_1 : in  std_logic;
-    o_LED_1    : out std_logic;
+    o_LED_1    : out std_logic);
 end entity Clocked_Logic;
 
 architecture RTL of Clocked_Logic is 
