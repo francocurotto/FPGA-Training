@@ -8,7 +8,7 @@ module Clocked_Logic(
 
     always @(posedge i_Clk) begin
         r_Switch_1 <= i_Switch_1; // creates a register
-        if (i_Switch_1==1'b0 && r_Switch_1 == 1'b1) begin
+        if (i_Switch_1==1'b0 && r_Switch_1==1'b1) begin
             r_LED_1 <= ~r_LED_1; // toggles the LED
         end
     end
